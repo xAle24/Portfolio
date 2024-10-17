@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #FDFFFC;
+    color: #0A0903;
+}
+.background {
+    width: 100%;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px; /* Added padding */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+header img {
+    height: 50px;
+}
+nav {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: #0A0903;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 20px; /* Increased font size for the nav links */
+}
+.contact-link {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.contact-link a {
+    color: #0A0903;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px; /* Increased font size for the contact link */
+}
+.content-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* Ensure sections take full width */
+    padding: 20px; /* Reduced padding */
+    background-color: #ededed; /* Set background color for all sections */
+    border-bottom: none; /* Removed border color */
+}
+.main-page {
+    background: url('resources/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+    align-items: center;
+    justify-items: center;
+}
+.main-image {
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.quote {
+    font-style: italic;
+    color: #555;
+    width: 200px;
+    margin-left: 20px; /* Space between the image and the quote */
+    font-size: 25px; /* Set font size for the quote */
+}
+.quote strong {
+    display: block;
+    text-align: right;
+    margin-top: 10px; /* Space between the quote and the author */
+    font-size: 25px; /* Set font size for the author */
+}
+.name {
+    margin-top: 20px;
+    font-size: 80px; /* Set font size for the name */
+    font-weight: bold;
+}
+.job-title {
+    font-size: 25px; /* Set font size for the job title */
+    color: #555;
+}

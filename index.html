@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="resources/mainImage.png" type="image/png">
 </head>
 <body>
     <div class="background">
         <header>
             <div class="logo-container">
-                <img src="your-logo.png" alt="Logo">
+                <a href="#main">
+                    <img src="resources/logo.png" alt="Logo">
+                </a>
             </div>
             <nav>
                 <a href="#about">About Me</a>
@@ -23,11 +27,36 @@
             </div>
         </header>
 
-        <section id="about" class="content-section">
-            <img src="your-photo.jpg" alt="Main Photo" class="main-image">
-            <div class="quote">"Your inspiring quote here"</div>
-            <div class="name">Your Name</div>
+        <section id="main" class="content-section main-page">
+            <div class="grid-container">
+                <div></div> <!-- Empty column -->
+                <div>
+                    <img src="resources/mainImage.png" alt="Main Photo" class="main-image">
+                </div>
+                <div class="quote">
+                    "L'unica cosa che possediamo in questa vita sono momenti nel tempo."
+                    <br>
+                    <strong>- LS23</strong>
+                </div>
+            </div>
+            <div class="name">Alessio Lizza</div>
             <div class="job-title">Programmer</div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2 style="font-size: 70px; text-align: top;">Biography</h2>
+            <div class="bio-container">
+                <div class="personal-info">
+                    <ul>
+                        <li><strong>Full Name:</strong> Alessio Lizza</li>
+                        <li><strong>Birthday:</strong> [Your Birthday]</li>
+                        <li><strong>Location:</strong> Bellaria-Igea Marina, Emilia Romagna, Italia</li>
+                    </ul>
+                </div>
+                <div class="biography">
+                    <p style="font-size: 50px;">Write your biography here...</p>
+                </div>
+            </div>
         </section>
 
         <section id="education" class="content-section">
