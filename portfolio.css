@@ -1,0 +1,31 @@
+#portfolio .content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ededed; /* Set background color */
+}
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap to create rows */
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+.project {
+    flex: 1 1 20%; /* Ensure each project takes up max 20% of the container */
+    text-align: center;
+    margin: 10px;
+}
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.project p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}

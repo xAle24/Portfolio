@@ -1,0 +1,71 @@
+#education .content-section {
+    display: flex;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: flex-start; /* Align items to the top */
+    flex-direction: column;
+    width: 100%;
+    background-color: #ededed; /* Set background color */
+}
+.achievements-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+    padding: 20px;
+}
+.skills {
+    flex: 1;
+    max-width: 20%; /* Set max width of the column */
+    padding-right: 20px; /* Added padding in the skills column */
+}
+.skill {
+    margin-bottom: 20px;
+}
+.skill-header {
+    display: flex;
+    align-items: center;
+}
+.skill img {
+    width: 30px; /* Adjust size of the image */
+    height: 30px; /* Adjust size of the image */
+    margin-right: 10px;
+}
+.skill span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    height: 10px; /* Smaller height */
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.progress-bar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    background-color: #44CF6C; /* All bars green */
+    border-radius: 5px;
+    width: 0;
+}
+[data-percentage="90"]::before {
+    width: 90%;
+}
+[data-percentage="95"]::before {
+    width: 95%;
+}
+[data-percentage="85"]::before {
+    width: 85%;
+}
+[data-percentage="80"]::before {
+    width: 80%;
+}
+.description {
+    flex: 2;
+    max-width: 55%;
+    font-size: 50px; /* Set font size for description */
+}
+.description p {
+    margin-top: 0;
+}
