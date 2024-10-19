@@ -1,0 +1,47 @@
+.experience-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.circle-line::before, .circle-line::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle-line::before {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.circle-line::after {
+    top: 20px;
+    width: 2px;
+    height: calc(100% - 20px);
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.experience-left, .experience-right {
+    flex: 1;
+    max-width: 45%; /* Adjusted for equal spacing */
+    padding: 10px; /* Added padding */
+}
+
+.experience-left {
+    text-align: right; /* Align text to the right */
+    padding-right: 20px;
+}
+
+.experience-right {
+    text-align: left; /* Align text to the left */
+    padding-left: 20px;
+}
