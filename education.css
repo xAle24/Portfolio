@@ -17,22 +17,7 @@
     flex: 1;
     max-width: 24%; /* Set max width of the column */
 }
-.skill {
-    margin-bottom: 20px;
-}
-.skill-header {
-    display: flex;
-    align-items: center;
-}
-.skill img {
-    width: 30px; /* Adjust size of the image */
-    height: 30px; /* Adjust size of the image */
-    margin-right: 10px;
-}
-.skill span {
-    font-size: 20px;
-    font-weight: bold;
-}
+
 .description {
     flex: 2;
     max-width: 55%;
@@ -50,8 +35,8 @@
 }
 
 .skill img {
-    width: 30px; /* Adjust size of the image */
-    height: 30px; /* Adjust size of the image */
+    width: 40px; /* Adjust size of the image */
+    height: 40px; /* Adjust size of the image */
     margin-right: 10px;
 }
 
@@ -75,7 +60,7 @@
 }
 
 .parallelogram.filled {
-    background-color: #44CF6C; /* Filled color */
+    background-color: #ff0000; /* Filled color */
 }
 
 .education-list {
