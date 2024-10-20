@@ -8,15 +8,14 @@
 }
 .achievements-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start; /* Align items to the top */
     width: 100%;
     padding: 20px;
 }
 .skills {
     flex: 1;
-    max-width: 20%; /* Set max width of the column */
-    padding-right: 20px; /* Added padding in the skills column */
+    max-width: 24%; /* Set max width of the column */
 }
 .skill {
     margin-bottom: 20px;
@@ -34,38 +33,72 @@
     font-size: 20px;
     font-weight: bold;
 }
-.progress-bar {
-    width: 100%;
-    background-color: #ddd;
-    height: 10px; /* Smaller height */
-    margin-top: 5px;
-    border-radius: 5px;
-}
-.progress-bar::before {
-    content: '';
-    display: block;
-    height: 100%;
-    background-color: #44CF6C; /* All bars green */
-    border-radius: 5px;
-    width: 0;
-}
-[data-percentage="90"]::before {
-    width: 90%;
-}
-[data-percentage="95"]::before {
-    width: 95%;
-}
-[data-percentage="85"]::before {
-    width: 85%;
-}
-[data-percentage="80"]::before {
-    width: 80%;
-}
 .description {
     flex: 2;
     max-width: 55%;
-    font-size: 50px; /* Set font size for description */
 }
 .description p {
     margin-top: 0;
+}
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+}
+
+.skill img {
+    width: 30px; /* Adjust size of the image */
+    height: 30px; /* Adjust size of the image */
+    margin-right: 10px;
+}
+
+.skill span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.parallelograms {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.parallelogram {
+    width: 20px;
+    height: 10px;
+    background-color: #ddd;
+    transform: skewX(20deg); /* Skew on X-axis to adjust angle */
+    margin-right: 5px;
+}
+
+.parallelogram.filled {
+    background-color: #44CF6C; /* Filled color */
+}
+
+.education-list {
+    list-style-type: none; /* Remove list circles */
+    padding: 0;
+}
+
+.education-list li {
+    margin-bottom: 20px;
+}
+
+.education-item {
+    display: flex;
+    flex-direction: column; /* Stack date and text */
+}
+
+.education-item .date {
+    font-size: 16px; /* Small date */
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px; /* Add space between date and text */
+}
+
+.education-item .text {
+    font-size: 22px; /* Text size */
 }

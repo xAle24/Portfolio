@@ -8,7 +8,7 @@
 .circle-line::before, .circle-line::after {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 28.5%;
     transform: translateX(-50%);
 }
 
@@ -30,18 +30,16 @@
     transition: all 0.3s ease-in-out;
 }
 
-.experience-left, .experience-right {
-    flex: 1;
-    max-width: 45%; /* Adjusted for equal spacing */
-    padding: 10px; /* Added padding */
-}
-
 .experience-left {
     text-align: right; /* Align text to the right */
     padding-right: 20px;
+    max-width: 27%; /* Adjusted for equal spacing */
+    flex: 1;
 }
 
 .experience-right {
     text-align: left; /* Align text to the left */
     padding-left: 20px;
+    max-width: 70%; /* Adjusted for equal spacing */
+    flex: 1;
 }

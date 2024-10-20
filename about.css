@@ -1,22 +1,19 @@
-#about .content-section {
+#about {
     display: flex;
     justify-content: flex-start; /* Align items to the top */
-    align-items: flex-start; /* Align items to the top */
     flex-direction: column;
     width: 100%;
     background-color: #ededed; /* Set background color */
 }
 .bio-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start; /* Align items to the top */
     width: 100%;
-    padding: 20px;
 }
 .personal-info {
     flex: 1;
-    max-width: 30%;
-    padding-right: 20px; /* Added padding in the personal column */
+    max-width: 20%;
 }
 .personal-info ul {
     list-style: none;
@@ -28,8 +25,8 @@
 .biography {
     flex: 2;
     max-width: 65%;
-    font-size: 50px; /* Smaller font size for biography */
+    font-size: 22px;
 }
 .biography p {
-    margin-top: 0;
+    margin: 0;    
 }
